@@ -1,2 +1,3 @@
-<p>characters-list works!</p>
-{{ characters$ | async | json}}
+<section class="characters__list">
+  <app-characters-car *ngFor="let character of characters$ | async" [character]="character"></app-characters-car>
+</section>

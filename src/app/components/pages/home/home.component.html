@@ -1,1 +1,3 @@
-<h1>Home works!</h1>
+<section class="character__list">
+  <app-characters-car *ngFor="let character of characters$ | async" [character]="character"></app-characters-car>
+</section>
