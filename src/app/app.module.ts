@@ -9,6 +9,9 @@ import { HeaderModule } from '@shared/components/header/header.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { SpinnerModule } from '@shared/components/spinner/spinner.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { SpinnerInterceptor } from '@shared/interceptors/spinner.interceptor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,8 +23,11 @@ import { ToastrModule } from 'ngx-toastr';
     HeaderModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    SpinnerModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,5 +1,5 @@
 <article class="card">
-  <a [routerLink]="['/character-details']" class="card__link">
+  <a [routerLink]="['/characters-details', character.id]" class="card__link">
     <figure>
       <img rel="preload" as="image" width="300" height="300" [src]="character.image" [alt]="character.name">
     </figure>

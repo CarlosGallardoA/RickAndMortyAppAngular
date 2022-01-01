@@ -1,1 +1,3 @@
-<p>characters-details works!</p>
+<section class="character__details">
+  <app-characters-car *ngIf="character$ | async as character" [character]="character"></app-characters-car>
+</section>
