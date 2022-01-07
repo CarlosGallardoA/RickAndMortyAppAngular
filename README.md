@@ -1,4 +1,8 @@
-# RickandmortyGraphQL
+## Preview
+
+[![img2.png](https://i.postimg.cc/G3JCkyBM/img2.png)](https://postimg.cc/XXJmWXkF)
+
+# RickandmortyGraphQLO
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
